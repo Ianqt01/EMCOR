@@ -1,5 +1,5 @@
 async function api(action, data = {}) {
-  if (!API_URL || API_URL.includes("PASTE_YOUR")) {
+  if (!API_URL || API_URL.includes("https://script.google.com/macros/s/AKfycbxhu4qm3YVa8pIfh89HLP6gYYxIouP3swRFKvEarGWrElemmj71s3HVDH6LGzfTt_RS/exec")) {
     throw new Error("Configure API_URL in js/config.js first.");
   }
   const payload = {action, ...data};
