@@ -1,6 +1,6 @@
 async function api(action, data = {}) {
   if (!API_URL || API_URL.includes("https://script.google.com/macros/s/AKfycbyFAqZvisW4MTkSxI_uFBb2SzBu1oG5G1UT2vBH2qv1ttIDSPtxOv87Bn8cmFUSubo6/exec")) {
-    throw new Error("Configure API_URL in js/config.js first.");
+    throw new Error("Configure API_URL in config.js first.");
   }
   const payload = {action, ...data};
   const response = await fetch(API_URL, {
