@@ -1,5 +1,5 @@
 async function api(action, data = {}) {
-    if (!API_URL || API_URL.includes("https://script.google.com/macros/s/AKfycbz_KTJ3XAwjwOTiJCd8HpweaycghHu2mNvTG3zOEcsy4-6p81XrRIHo9hIbOSMI845M/exec")) {
+    if (!API_URL || API_URL.includes("YOUR_EXEC_URL_HERE")) {
         throw new Error("API URL is not configured.");
     }
 
