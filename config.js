@@ -8,7 +8,7 @@ const API_URL = "https://script.google.com/macros/s/AKfycbz_KTJ3XAwjwOTiJCd8Hpwe
  */
 async function api(action, data = {}) {
   if (!API_URL || API_URL.includes("YOUR_EXEC_URL_HERE")) {
-    throw new Error("Configure API_URL in js/config.js first.");
+    throw new Error("Configure API_URL in config.js first.");
   }
 
   const payload = { action, ...data };
